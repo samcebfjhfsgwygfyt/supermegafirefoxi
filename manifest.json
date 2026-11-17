@@ -1,0 +1,17 @@
+{
+  "name": "SuperMegaFirefox",
+  "short_name": "SuperMegaFirefox",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#1e1e2e",
+  "theme_color": "#0095ff",
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
+
+  
