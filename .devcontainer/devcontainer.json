@@ -1,0 +1,11 @@
+{
+  "name": "SuperMegaFirefox",
+  "image": "jlesage/firefox:latest",
+  "forwardPorts":,
+  "portsAttributes": {
+    "5800": {
+      "label": "SuperMegaFirefox",
+      "onAutoForward": "openBrowser"
+    }
+  }
+}
