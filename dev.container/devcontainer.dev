@@ -1,0 +1,7 @@
+{
+  "name": "SuperMegaFirefox",
+  "image": "://microsoft.com",
+  "postCreateCommand": "sudo apk add --no-cache firefox fluxbox xvfb x11vnc novnc websockify font-noto font-dejavu fontconfig && fc-cache -fv",
+  "postStartCommand": "nohup sh -c 'Xvfb :1 -screen 0 1366x768x24 & sleep 2; DISPLAY=:1 fluxbox & sleep 1; DISPLAY=:1 firefox & x11vnc -display :1 -rfbport 5900 -nopw -forever & sleep 2; websockify --web=/usr/share/novnc/ 5800 localhost:5900' >/dev/null 2>&1 &",
+  "appPort": ["5800:5800"]
+}
